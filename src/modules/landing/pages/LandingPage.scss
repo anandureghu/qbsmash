@@ -15,8 +15,8 @@
 
     @apply relative;
 
-    &-logo{
-      &--text{
+    &-logo {
+      &--text {
         @apply text-4xl font-light text-center absolute w-full top-10 text-white;
       }
     }
@@ -25,15 +25,50 @@
       @apply absolute bottom-20 text-white text-center w-full;
 
       &--title {
-        @apply text-8xl font-medium;
+        @apply text-[180px] font-bold font-miso lowercase;
       }
 
       &--subtitle {
-        @apply mt-5 font-extralight;
+        @apply -mt-10 font-extralight;
       }
 
       &--action {
-        @apply bg-white text-blue-800 px-10 py-3 mt-5 -skew-x-12 text-2xl transition-all hover:scale-105 active:scale-100 shadow-lg;
+        @apply bg-white text-blue-800 px-10 py-3 mt-5 text-2xl shadow-lg;
+      }
+    }
+  }
+
+  &__actions {
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to bottom,
+      rgba(0, 0, 70, 0.9),
+      rgba(0, 0, 70, 1)
+    );
+    background: linear-gradient(to top, rgba(0, 0, 70, 0.8), rgba(0, 0, 70, 1));
+
+    &-title {
+      @apply text-left text-white text-7xl mb-10;
+
+      span {
+        @apply text-9xl;
+      }
+    }
+
+    &-list {
+      list-style: none;
+
+      @apply text-white;
+
+      button {
+        @apply -skew-x-12 text-4xl border-b border-white w-full text-left px-2 py-4 relative flex justify-between items-center gap-40 hover:pl-8;
       }
     }
   }
