@@ -16,9 +16,24 @@ const ActionsSection = () => {
         >
           Rules
         </div>
-        <div className="dashboard__actions-items--item">Announcements</div>
-        <div className="dashboard__actions-items--item">Teams</div>
-        <div className="dashboard__actions-items--item">Matches</div>
+        <div
+          className="dashboard__actions-items--item"
+          onClick={() => router.push("/announcements")}
+        >
+          Announcements
+        </div>
+        <div
+          className="dashboard__actions-items--item"
+          onClick={() => router.push("/teams")}
+        >
+          Teams
+        </div>
+        <div
+          className="dashboard__actions-items--item"
+          onClick={() => router.push("/matches")}
+        >
+          Matches
+        </div>
       </div>
     </section>
   );
