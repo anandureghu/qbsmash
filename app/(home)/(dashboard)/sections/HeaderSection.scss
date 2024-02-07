@@ -21,11 +21,11 @@
 
     &--title {
       @apply text-8xl font-medium;
-      text-shadow: 8px 8px rgb(99, 108, 148);
+      text-shadow: 2px 8px 10px rgba(45, 43, 71, 0.603);
     }
 
     &--subtitle {
-      @apply mt-16 font-extralight;
+      @apply mt-16 font-normal text-gray-300;
     }
 
     &--action {

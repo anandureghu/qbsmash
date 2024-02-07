@@ -1,9 +1,11 @@
 import HeaderSection from "./sections/HeaderSection";
+import ActionsSection from "./sections/ActionsSection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="dashboard page">
       <HeaderSection />
+      <ActionsSection />
     </main>
   );
 }
