@@ -1,0 +1,28 @@
+.admin_layout {
+  position: relative;
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    height: 100vh;
+
+    &__item {
+      padding: 10px;
+      padding-right: 20px;
+      margin: 1px 0;
+      cursor: pointer;
+
+      &.active {
+        background-color: #4232ff;
+        color: white;
+      }
+
+      &:hover {
+        background-color: #4232ff;
+        color: white;
+      }
+    }
+  }
+}
