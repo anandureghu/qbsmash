@@ -3,6 +3,8 @@ import { Poppins } from "next/font/google";
 import Sidebar from "@/app/(admin)/components/Sidebar";
 import "../globals.css";
 import "./layout.scss";
+import { Bounce, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,6 +26,19 @@ export default function RootLayout({
         <Sidebar />
         <div style={{ padding: "20px", paddingLeft: "170px" }}>{children}</div>
       </body>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={3000}
+        limit={2}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </html>
   );
 }

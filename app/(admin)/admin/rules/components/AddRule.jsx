@@ -4,6 +4,7 @@ import "./AddRule.scss";
 import { Form, Formik } from "formik";
 import axios from "axios";
 import { addRulesValidationScema } from "@/validations/rules/addRules.validation";
+import { toast } from "react-toastify";
 
 /**
  * error message showing component for a field
@@ -20,12 +21,16 @@ const AddRule = ({ open, close }) => {
       .post("/api/rules", values)
       .then(({ data, status }) => {
         if (status === 201) {
+          toast.success("Rule Added successfully");
           close();
           resetForm();
+        } else {
+          toast.warning("someting happened please try again later");
         }
       })
       .catch((err) => {
         console.log(err);
+        toast.error("someting happened please try again later");
       });
   };
 
