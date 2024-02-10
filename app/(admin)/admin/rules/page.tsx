@@ -1,9 +1,25 @@
-import React from 'react'
+"use client";
+
+import React, { useState } from "react";
+import "./styles/AdminRules.scss";
+import AddRule from "@/app/(admin)/admin/rules/components/AddRule";
 
 const AdminRulesPage = () => {
-  return (
-    <div>AdminRulesPage</div>
-  )
-}
+  const [openPopup, setOpenPopup] = useState(false);
 
-export default AdminRulesPage
+  const open = () => setOpenPopup(true);
+  const close = () => setOpenPopup(false);
+
+  return (
+    <div className="rules">
+      <div className="rules__action">
+        <button className="rules__action-addbtn" onClick={open}>
+          Add Rule
+        </button>
+      </div>
+      <AddRule open={openPopup} close={close} />
+    </div>
+  );
+};
+
+export default AdminRulesPage;
