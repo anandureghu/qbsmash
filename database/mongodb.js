@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import * as fb from "./firebase";
 
 let isConnected = false; // track the connection
 

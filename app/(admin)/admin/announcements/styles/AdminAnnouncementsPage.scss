@@ -1,0 +1,12 @@
+.admin_layout .announcements {
+  &__action{
+    display: flex;
+    justify-content: end;
+    
+    &-addbtn {
+      background-color: #4232ff;
+      color: white;
+      padding: 10px 20px;
+    }
+  }
+}

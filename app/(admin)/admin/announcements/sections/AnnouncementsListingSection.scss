@@ -1,0 +1,10 @@
+.admin_layout .announcements__list {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+
+  &-noData {
+    text-align: center;
+    color: gray;
+  }
+}
