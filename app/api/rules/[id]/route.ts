@@ -1,7 +1,7 @@
 import { connectToDB } from "@/database/mongodb";
 import Rule from "@/models/rules";
 
-export const DELETE = async (req: Request, { params }) => {
+export const DELETE = async (req: Request, { params }: { params: any }) => {
   try {
     await connectToDB();
 
