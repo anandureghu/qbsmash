@@ -42,6 +42,7 @@ const AddAnnouncement = ({
         title: values.title,
         description: values.description,
         imageUrl: data?.signedUrl,
+        imagePath: uploadedImageId,
       };
 
       axios
