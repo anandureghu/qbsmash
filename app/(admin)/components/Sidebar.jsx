@@ -11,6 +11,7 @@ const Sidebar = () => {
   const items = [
     { label: "Dashboard", path: "/admin" },
     { label: "Rules", path: "/admin/rules" },
+    { label: "Announcements", path: "/admin/announcements" },
     { label: "Players", path: "/admin/players" },
     { label: "Teams", path: "/admin/teams" },
     { label: "Matches", path: "/admin/matches" },
